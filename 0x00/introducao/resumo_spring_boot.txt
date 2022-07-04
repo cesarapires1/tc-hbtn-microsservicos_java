@@ -1,0 +1,25 @@
+O que é Spring Boot Framework?
+Spring Boot é uma estrutura que facilita a criação de aplicativos Spring autossuficientes
+e robustos que suportam execução imediata. No entanto, isso só é possível devido à abordagem
+opinativa da plataforma Spring e das bibliotecas de terceiros, que permite que os desenvolvedores
+gastem o menor tempo possível configurando um projeto e escrevendo suas regras de negócios.
+
+Quais são os benefícios e recursos que Spring Boot fornece?
+- Aumento da produtividade
+- Convensão sobre configuração do projeto
+- Redução do tempo de desenvolvimeto
+- Reaproveitamento de código, já que muitas funcionalidade já estão prontas
+- Servidor web embutido
+
+Como é feita a adição de novas dependências (JPA, Hibernate, etc…)?
+Através do arquivo pom.xml
+
+Na sua opinião, qual é a melhor IDE para trabalhar com o Spring Boot: Spring Tools Suites, IntelliJ IDEA, Eclipse ou NetBeans ?
+O Spring Tools Suites é uma ótima forma de se trabalhar com o Spring Boot já que ele facilita de mais o desenvolvimeto, mas pessoalmente
+eu gosto do IntelliJ para programar pela sua robustez.
+
+O que é Spring Initializr?
+Spring Initializr é uma ferramenta baseada na Web que gera a estrutura do projeto Spring Boot . O erro de grafia em 
+initializr é inspirado em initializr . Os IDEs modernos integraram o Spring Initializr que fornece a estrutura 
+inicial do projeto. É muito fácil para os desenvolvedores selecionar a configuração necessária para seus projetos. 
+A ferramenta Spring Initializr cuida da configuração a seguir para qualquer projeto baseado em Spring. 
