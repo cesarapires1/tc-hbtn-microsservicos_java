@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "e81dd534-783b-4d88-9195-d4dcd8fc6871",
+		"name": "CLIENTES API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17911449"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Fernanda Alana Oliveira\",\n    \"idade\": \"52\",\n    \"email\": \"fernanda.alana.oliveira@balloons.com.br\",\n    \"telefones\": [\n        {\"ddd\": \"35\", \"numero\": \"3878-4133\"},\n        {\"ddd\": \"35\", \"numero\": \"99486-2318\"}\n    ],\n    \"enderecos\": [\n        {\n            \"logradouro\": \"Avenida\",\n            \"endereco\": \"Avenida Comendador Francisco Avelino Maia\",\n            \"numero\": \"931\",\n            \"bairro\": \"Exposição\",\n            \"cidade\": \"Passos\",\n            \"estado\": \"MG\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/addClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/findAllClients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"findAllClients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/findClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"findClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_BY_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/removeClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"removeClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Fernanda Alana Oliveira\",\n    \"idade\": \"32\",\n    \"email\": \"fernanda.alana.oliveira@balloons.com.br\",\n    \"telefones\": [\n        {\"ddd\": \"35\", \"numero\": \"3878-4133\"},\n        {\"ddd\": \"35\", \"numero\": \"99486-2318\"}\n    ],\n    \"enderecos\": [\n        {\n            \"logradouro\": \"Avenida\",\n            \"endereco\": \"Avenida Comendador Francisco Avelino Maia\",\n            \"numero\": \"931\",\n            \"bairro\": \"Exposição\",\n            \"cidade\": \"Passos\",\n            \"estado\": \"MG\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/updateClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"updateClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
