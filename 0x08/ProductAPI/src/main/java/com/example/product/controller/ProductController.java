@@ -43,7 +43,7 @@ public class ProductController {
         return productRepository.getAllProducts();
     }
 
-    @ApiOperation(value = "Reponsável por atualizar um produto.")
+    @ApiOperation(value = "Responsável por atualizar um produto.")
     @ApiResponses(value = {
             @ApiResponse(code = 14, message = "No information has been updated. The new information is the same as recorded in the database.")
     })
